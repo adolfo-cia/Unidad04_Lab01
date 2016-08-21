@@ -90,7 +90,7 @@ namespace Lab01
         private static void escribirXML()
         {
             XmlTextWriter escritorXML = new XmlTextWriter("agendaXML.xml", null);
-            escritorXML.Formatting = Formatting.Indented; //no es necesario, pero se hace mas facil leer el contenido
+            escritorXML.Formatting = Formatting.Indented; //no es necesario, pero se hace mas facil leer el contenido asdasd
             escritorXML.WriteStartDocument(true);
             escritorXML.WriteStartElement("DocumentElement"); //este elemento no es necesario, es para compatibilidad con los xml generados
             StreamReader lector = File.OpenText("agenda.txt");
